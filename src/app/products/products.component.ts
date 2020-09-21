@@ -18,7 +18,11 @@ export class ProductsComponent implements OnInit {
     this.productService.addProduct(productName, quantity);
    
   }
-  deleteItem(productName: string, quantity: number){
+  delItem(productName: string, quantity: number){
+    console.log("Inside Product Component ",productName, quantity)
+    this.productService.delItem(productName, quantity);
+  }
+  delProduct(productName: string, quantity: number){
     console.log("Inside Product Component ",productName, quantity)
     this.productService.delProduct(productName, quantity);
   }

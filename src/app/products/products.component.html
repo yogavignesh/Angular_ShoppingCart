@@ -9,5 +9,6 @@ Quantity:&nbsp; <input #quantity>
 
 <br><br>
 <button (click)="updateCart(newProduct.value, quantity.value)">Add to Cart</button>
-&nbsp;&nbsp;<button (click)="deleteItem(newProduct.value, quantity.value)">Remove</button>
+&nbsp;&nbsp;<button (click)="delItem(newProduct.value, quantity.value)">Remove</button>
+&nbsp;&nbsp;<button (click)="delProduct(newProduct.value, quantity.value)">Delete</button>
 </div>
