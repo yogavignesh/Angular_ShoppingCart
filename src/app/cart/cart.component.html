@@ -1,0 +1,17 @@
+<div [ngClass]="'shoppingcart'">
+
+    <h2>Shopping Cart: </h2><br/>
+    <br/>
+    <h3>
+    Items available in the shopping cart:</h3>
+
+<table [ngClass]="'altrowstable shoppingcart'">
+    <tr><th>Product</th><th>Quantity</th></tr>
+    <tr *ngFor="let product of selectedProducts">
+       <td>{{product.productName}} </td> 
+        <td [ngStyle]="{'font-style':'Arial','font-weight':'bold'}"> {{product.quantity}} </td>
+    </tr>
+    
+</table><br>
+<p [ngStyle]="{'display':noItems()}"> No items in the cart</p>
+</div>

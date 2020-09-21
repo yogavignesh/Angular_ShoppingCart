@@ -1,0 +1,15 @@
+.itemPage{
+    text-align: center;
+    font-family: verdana,arial,sans-serif;
+}
+.itemPage p{
+    font-size:15px;
+    color: green;
+
+}
+.itemPage ul li{
+    font-size:16px;
+    color: blue;
+
+}
+

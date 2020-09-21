@@ -1,0 +1,13 @@
+<div [ngClass]="'itemPage'">
+<h1>
+    Better than Amazon Shopping
+  </h1>
+<p>What do you want to buy?</p><br>
+
+Product:&nbsp; <input #newProduct>&nbsp;&nbsp;&nbsp;
+Quantity:&nbsp; <input #quantity>
+
+<br><br>
+<button (click)="updateCart(newProduct.value, quantity.value)">Add to Cart</button>
+&nbsp;&nbsp;<button (click)="deleteItem(newProduct.value, quantity.value)">Remove</button>
+</div>
